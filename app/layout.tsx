@@ -3,11 +3,13 @@ import './globals.css';
 
 const outfit = Outfit({
     variable: '--font-outfit',
+    display: 'swap',
     subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
     variable: '--font-geist-mono',
+    display: 'swap',
     subsets: ['latin'],
 });
 
@@ -18,7 +20,7 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <body className={`${outfit.variable} ${geistMono.variable}`}>{children}</body>
+            <body className={`${outfit.variable} ${geistMono.variable} font-sans`}>{children}</body>
         </html>
     );
 }
