@@ -3,11 +3,14 @@ import './globals.css';
 
 const outfit = Outfit({
     variable: '--font-outfit',
+    display: 'swap',
     subsets: ['latin'],
 });
 
 const geistMono = Geist_Mono({
     variable: '--font-geist-mono',
+    weight: '900',
+    display: 'swap',
     subsets: ['latin'],
 });
 
